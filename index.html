@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+   <h1>Cajero Automatico</h1> 
+
+<button onclick="consultarSaldo()">consultar saldo</button>
+
+<p>ingrese el monto que desea retirar </p>
+<input id="retiro" type="number" step="any" required min="0.01">
+<button onclick="retirarMonto()">retirar</button>
+
+<p>ingrese el monto a depositar</p>
+<input id="deposito" type="number" step="any" required min="0.01">
+<button onclick="depositarMonto()">depositar</button>
+
+<p id="mostrarSaldo">Tu saldo aparecerá aquí</p>
+
+    <script src="main.js"></script>
+</body>
+</html>
